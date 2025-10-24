@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    color: #fff;
+    background-color: #090300;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100px;
+    background-color: #090300;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav ul {
+    display: flex;
+    gap: 40px;
+}
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+.logo span {
+    color: #fa9021;
+}
+.nav ul a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.nav ul a:hover,
+.nav ul a.active {
+    border-bottom-color: #FA9021;
+}
+
+.btn {
+    background-color: #FA9021;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #FA9021;
+}
+
+.hero {
+    background: linear-gradient(to right, #1b0f05, #090300);
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    color: #FA9021;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.history {
+    margin-top: 100px;
+}
+
+.era {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+.era.reverse {
+    flex-direction: row-reverse;
+}
+
+.era img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.era .text h2 {
+    color: #FA9021;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.era .text p {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.team {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.team h2 {
+    color: #FA9021;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.team p {
+    width: 70%;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1b0f05;
+    border-radius: 15px;
+    padding: 25px;
+    width: 30%;
+    min-width: 250px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px #FA902150;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #FA9021;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer {
+    margin-top: 80px;
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #2b1a0c;
+}
+
+.footer p {
+    font-size: 13px;
+    color: #ccc;
+}
+
+
+@media (max-width: 992px) {
+    .era {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .era img {
+        width: 90%;
+    }
+    
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 34px;
+    }
+    
+    .hero-content p {
+        font-size: 15px;
+    }
+    
+    .team h2 {
+        font-size: 28px;
+    }
+    
+    .era .text h2 {
+        font-size: 22px;
+    }
+}

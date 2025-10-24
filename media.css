@@ -1,0 +1,250 @@
+/* ========== GENERAL RESET FOR RESPONSIVE ========== */
+* {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========== LARGE SCREENS (default 1440px) ========== */
+@media (max-width: 1440px) {
+  .nav ul {
+    margin-left: 400px;
+    gap: 60px;
+  }
+  .main {
+    padding: 0 100px;
+  }
+  .trading_games,
+  .video,
+  .projects {
+    padding: 0 100px;
+  }
+}
+
+/* ========== LAPTOPS (max 1200px) ========== */
+@media (max-width: 1200px) {
+  .nav ul {
+    margin-left: 250px;
+    gap: 40px;
+  }
+  .main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+  .m1 h2 {
+    font-size: 40px;
+    width: auto;
+  }
+  .m1 p {
+    width: 90%;
+    margin: 0 auto 30px;
+  }
+  .imgM2 {
+    position: static;
+    margin-top: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .trading_images {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  .projects {
+    width: 100%;
+  }
+  .images, .imags {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .images img, .imags img {
+    width: 30%;
+  }
+  .footer {
+    width: 100%;
+  }
+}
+
+/* ========== TABLETS (max 992px) ========== */
+@media (max-width: 992px) {
+  .nav {
+    justify-content: space-between;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .btn {
+    width: 110px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .main {
+    padding: 0 60px;
+  }
+
+  .m1 h2 {
+    font-size: 32px;
+  }
+
+  .m1 p {
+    font-size: 14px;
+  }
+
+  .trading_text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .trading_text button {
+    margin-top: 20px;
+  }
+
+  .video h3 {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .projects {
+    padding: 0 30px;
+  }
+
+  .p1 p {
+    width: 100%;
+  }
+
+  .mas1 p {
+    width: 90%;
+  }
+
+  .mas2 img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+/* ========== MOBILE (max 768px) ========== */
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav img {
+    width: 120px;
+  }
+
+  .main {
+    padding: 0 20px;
+  }
+
+  .m1 h2 {
+    font-size: 26px;
+    width: 100%;
+  }
+
+  .m1 p {
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .trading_text h2 {
+    font-size: 22px;
+  }
+
+  .trading_images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trading_images img {
+    width: 80%;
+  }
+
+  .video h3 {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+
+  .vid p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .images img, .imags img {
+    width: 90%;
+  }
+
+  .mas2 img {
+    width: 250px;
+  }
+
+  .email-box form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 150px;
+  }
+
+  .footer p {
+    font-size: 11px;
+  }
+}
+
+/* ========== SMALL MOBILE (max 480px) ========== */
+@media (max-width: 480px) {
+  .m1 h2 {
+    font-size: 22px;
+  }
+
+  .btn, .but {
+    width: 100%;
+    height: 45px;
+  }
+
+  .trading_text h2 {
+    font-size: 20px;
+  }
+
+  .video h3 {
+    font-size: 18px;
+  }
+
+  .p1 h3 {
+    font-size: 22px;
+  }
+
+  .mas1 h3 {
+    font-size: 18px;
+  }
+
+  .mas1 p {
+    font-size: 13px;
+  }
+
+  .footer p {
+    font-size: 10px;
+  }
+}
